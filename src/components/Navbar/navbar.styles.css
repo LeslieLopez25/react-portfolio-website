@@ -1,0 +1,63 @@
+nav {
+    background: hsl(209.5, 100%, 22%, 0.5);
+}
+
+.navbar {
+    font-family: "Ubuntu", sans-serif;
+    padding: 1.25rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.navbar #sticky {
+    padding: 0.9375rem 0;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.1875rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: hsl(212.1, 100%, 19.4%);
+}
+
+.navbar .menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 1.5625rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: hsl(212.1, 100%, 19.4%);
+}
+
+.navbar #sticky .menu li a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+/* MENU BTN */
+.menu-btn {
+    display: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4375rem;
+    cursor: pointer;
+}
