@@ -1,38 +1,125 @@
-.App {
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ALL SIMILAR CONTENT */
+html,
+body {
+  overflow-x: hidden;
+}
+
+header,
+main,
+section {
+  padding: 6.25rem 0;
+}
+
+header,
+main,
+section,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+
+.max-width {
+  margin: auto;
+  padding: 0 5rem;
+  max-width: 90rem;
+}
+
+main .title::before,
+section .title::before {
+  content: "";
+  background: hsl(210.1, 100%, 50%);
+  width: 18.75rem;
+  height: 0.3125rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header,
+main,
+section {
+  background: hsl(212.7, 100%, 6.5%);
+  background-image: url("./assets/images/checkered-pattern.png");
+  color: hsl(0, 0%, 100%);
+}
+
+main h2 span,
+section h2 span {
+  background: hsl(212.7, 100%, 6.5%);
+  padding: 0 0.625rem;
+  position: relative;
+  z-index: 5;
+}
+
+main .title,
+section .title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.25rem;
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-content,
+.interests-content,
+.projects-content,
+.courses-content,
+.contact-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.interests-content .card,
+.projects-content .card,
+.courses-content .card {
+  background: hsl(212.1, 100%, 19.4%);
+  margin-bottom: 3.125rem;
+  padding: 1.25rem 1.5625rem;
+  width: calc(33% - 1.25rem);
+  text-align: center;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.interests-content .card:hover,
+.projects-content .card:hover,
+.courses-content .card:hover {
+  box-shadow: 0 0 12px 1px hsl(210.1, 100%, 50%);
+  transition: all 0.2s ease;
+}
+
+.interests .interests-content .card .box,
+.projects .projects-content .card .box,
+.courses .courses-content .card .box {
+  transition: all 0.2s ease;
+}
+
+.interests .interests-content .card:hover .box,
+.projects .projects-content .card:hover .box,
+.courses .courses-content .card:hover .box,
+.skills .tech-icons:hover {
+  transform: scale(1.02);
+}
+
+.projects .projects-content .card .project-img,
+.courses .courses-content .card .course-img {
+  width: 100%;
+  height: auto;
 }

@@ -1,0 +1,48 @@
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 6px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    margin-bottom: 0.625rem;
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: hsl(210.1, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    padding: 0.625rem 1.875rem;
+    border: 2px solid hsl(210.1, 100%, 50%);
+    border-radius: 6px;
+}
+
+.about .about-content .right a:hover {
+    background: none;
+    color: hsl(210.1, 100%, 50%);
+}
