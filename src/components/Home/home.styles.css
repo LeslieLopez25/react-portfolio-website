@@ -1,0 +1,38 @@
+.home {
+    display: flex;
+    color: hsl(210.1, 100%, 50%);
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
+}
+
+.home .bg-img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.home .max-width {
+    margin: auto 0 auto 1.875rem;
+    z-index: 2;
+}
+
+.home .home-content .text-1 {
+    font-size: 1.6875rem;
+}
+
+.home .home-content .text-2 {
+    margin-left: -0.1875rem;
+    font-size: 4.6875rem;
+    font-weight: 600;
+}
+
+.home .home-content .text-3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0.3125rem 0;
+}
