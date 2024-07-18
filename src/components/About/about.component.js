@@ -1,4 +1,5 @@
 import React from "react";
+import profileImage from "../../assets/images/profile.png";
 
 import "../../App.css";
 import "./about.styles.css";
@@ -12,11 +13,7 @@ export default function About() {
         </h2>
         <div className="about-content">
           <div className="column left">
-            <img
-              src="/assets/images/profile.png"
-              alt="profile pic"
-              loading="lazy"
-            />
+            <img src={profileImage} alt="profile pic" loading="lazy" />
           </div>
           <div className="column right">
             <h3 className="text">I'm Leslie Lopez</h3>
