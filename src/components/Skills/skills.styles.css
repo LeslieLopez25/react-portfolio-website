@@ -1,0 +1,28 @@
+.skills .skills-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: 0 auto;
+    max-width: calc(90% - 1.25rem);
+    text-align: center;
+}
+
+.skills .skills-content .text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.625rem 0 0.4375rem 0;
+    text-align: center;
+}
+
+.skills .tech-icons {
+    background-color: hsl(212.1, 100%, 19.4%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 0.625rem;
+}
+
+.skills .tech-icons:hover {
+    box-shadow: 0 0 0.5rem 0.1875rem hsl(210.1, 100%, 50%);
+}
