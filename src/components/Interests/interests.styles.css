@@ -1,0 +1,10 @@
+.interests .interests-content .card .interests-imgs {
+    width: 8.125rem;
+    height: 8.125rem;
+}
+
+.interests .interests-content .card .text {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin: 0.625rem 0 0.4375rem 0;
+}
