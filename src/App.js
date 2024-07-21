@@ -5,6 +5,7 @@ import About from "./components/About/about.component";
 import Interests from "./components/Interests/interests.component";
 import Skills from "./components/Skills/skills.component";
 import Projects from "./components/Projects/projects.component";
+import Experiences from "./components/Experiences/experiences.component";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ export default function App() {
       <Interests />
       <Skills />
       <Projects />
+      <Experiences />
     </div>
   );
 }

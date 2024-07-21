@@ -1,0 +1,79 @@
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.experiences .experiences-content {
+    margin-left: 13rem;
+    padding: 0 2.5rem;
+    width: calc(30% - 2rem);
+    text-align: center;
+}
+
+.experiences .dates ul {
+    background-color: hsl(212.1, 100%, 19.4%);
+    background-image: url("../../assets/images/checkered-pattern.png");
+    margin: 0 auto;
+    padding: 5rem;
+    width: 70vw;
+    position: relative;
+    right: 6.25rem;
+    text-align: left;
+    border-left: 4px solid hsl(0, 0%, 100%);
+    border-radius: 0.8rem;
+    list-style: none;
+}
+
+.experiences h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.experiences h3 {
+    color: hsl(210.1, 100%, 50%);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.experiences .dates .circle {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    border-bottom: 1px solid hsl(210.1, 100%, 50%);
+}
+
+.experiences .dates .circle:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.experiences .dates .circle::before,
+.experiences .dates .circle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.experiences .dates .circle::before {
+    font-size: 1rem;
+    left: -21rem;
+    text-align: right;
+}
+
+.experiences .dates .circle::after {
+    content: "";
+    background-color: hsl(210.1, 100%, 50%);
+    width: 0.8rem;
+    height: 0.8rem;
+    left: -5.5rem;
+    box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
