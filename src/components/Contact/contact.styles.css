@@ -1,0 +1,129 @@
+.contact .contact-content .column {
+    width: calc(50% - 1.875rem);
+}
+
+.contact .contact-content .text {
+    font-size: 1.4375rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+
+.contact .contact-content .left {
+    margin-bottom: 12rem;
+}
+
+.contact .contact-content .left .icons {
+    margin: 0.625rem 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    align-items: center;
+    background-color: hsl(212.1, 100%, 19.4%);
+    margin-top: 0.9375rem;
+    padding-left: 0.9375rem;
+    height: 4.0625rem;
+    border-radius: 4px;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 1.875rem;
+}
+
+.contact .contact-content .row .icon {
+    color: hsl(210.1, 100%, 50%);
+    font-size: 2.5rem;
+}
+
+.contact .contact-content .info .head {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact .right {
+    margin-bottom: 6.25rem;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    margin-bottom: 0.9375rem;
+    width: 100%;
+    height: 2.8125rem;
+}
+
+.contact .right form .textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+.contact .right form .name {
+    margin-right: 0.625rem;
+}
+
+.contact .right form .email {
+    margin-left: 0.625rem;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    font-size: 1.0625rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0 0.9375rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid hsl(0, 0%, 75.3%);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: hsl(0, 0%, 45.9%);
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 0.625rem;
+    resize: none;
+}
+
+.contact .right form .button {
+    width: 10.625rem;
+    height: 2.9375rem;
+}
+
+.contact .right form .button button {
+    background: hsl(210.1, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.625rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid hsl(210.1, 100%, 50%);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact .right form .button button:hover {
+    background: none;
+    color: hsl(210.1, 100%, 50%);
+}
+
+a:link {
+    color: hsl(210.1, 100%, 50%);
+}
+
+a:visited {
+    color: hsl(0, 0%, 45.9%);
+}
+
+a:hover {
+    color: hsl(0, 0%, 100%);
+}
