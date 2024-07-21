@@ -1,0 +1,32 @@
+.projects .projects-content .card .text {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin: 0.625rem 0 0.4375rem 0;
+}
+
+.projects .projects-content .card p {
+    padding-bottom: 1.5625rem;
+}
+
+.projects .btn-code,
+.projects .btn-demo {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+    border: hsl(210.1, 100%, 50%) solid 2px;
+    border-radius: 4px;
+    margin: 0.625rem;
+}
+
+.projects .btn-code {
+    background: hsl(210.1, 100%, 50%);
+}
+
+.projects .btn-code:hover {
+    background: none;
+    border: hsl(210.1, 100%, 50%) solid 2px;
+}
+
+.projects .btn-demo:hover {
+    background: hsl(210.1, 100%, 50%);
+}
