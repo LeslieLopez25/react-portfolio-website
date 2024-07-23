@@ -3,6 +3,7 @@ nav {
 }
 
 .navbar {
+    background: hsl(209.5, 100%, 22%, 0.5);
     font-family: "Ubuntu", sans-serif;
     padding: 1.25rem 0;
     width: 100%;
@@ -10,6 +11,10 @@ nav {
     top: 0;
     transition: all 0.3s ease;
     z-index: 100;
+}
+
+.navbar.scrolled {
+    background: hsl(210.1, 100%, 50%);
 }
 
 .navbar #sticky {

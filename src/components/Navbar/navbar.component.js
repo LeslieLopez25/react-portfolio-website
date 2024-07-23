@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useHoverAnimation } from "../../Hooks/hover";
 
 import "./navbar.styles.css";
 
 export default function Navbar() {
+  useHoverAnimation();
+
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar" id="sticky">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="sticky">
       <div className="max-width">
         <div className="logo">
           Portfo<span>lio</span>
