@@ -8,6 +8,7 @@ import Projects from "./components/Projects/projects.component";
 import Experiences from "./components/Experiences/experiences.component";
 import Courses from "./components/Courses/courses.component";
 import Contact from "./components/Contact/contact.component";
+import Footer from "./components/Footer/footer.component";
 
 import "./App.css";
 
@@ -23,6 +24,7 @@ export default function App() {
       <Experiences />
       <Courses />
       <Contact />
+      <Footer />
     </div>
   );
 }

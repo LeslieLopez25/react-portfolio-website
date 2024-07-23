@@ -1,0 +1,6 @@
+footer {
+    background: hsl(210.1, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.9375rem 1.4375rem;
+    text-align: center;
+}
