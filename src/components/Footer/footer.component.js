@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright as farCopyright } from "@fortawesome/free-regular-svg-icons";
 
 import "../../App.css";
 import "./footer.styles.css";
@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <FontAwesomeIcon icon={faCopyright} />
+      <FontAwesomeIcon icon={farCopyright} className="icon" />
       {currentYear} Leslie Lopez
     </footer>
   );

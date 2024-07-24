@@ -4,3 +4,7 @@ footer {
     padding: 0.9375rem 1.4375rem;
     text-align: center;
 }
+
+.icon {
+    margin-right: 8px;
+}

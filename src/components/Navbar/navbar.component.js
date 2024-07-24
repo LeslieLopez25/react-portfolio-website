@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useHoverAnimation } from "../../Hooks/hover";
 
 import "./navbar.styles.css";
 
 export default function Navbar() {
-  useHoverAnimation();
-
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
