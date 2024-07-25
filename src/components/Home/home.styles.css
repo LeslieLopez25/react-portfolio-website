@@ -4,14 +4,15 @@
     height: 100vh;
     font-family: "Ubuntu", sans-serif;
     -webkit-text-stroke: 0.5px hsl(0, 0%, 100%);
+    position: relative;
 }
 
 .home .bg-img {
     width: 100%;
     height: 100vh;
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
     z-index: 1;
 }
 

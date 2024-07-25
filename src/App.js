@@ -10,11 +10,25 @@ import Courses from "./components/Courses/courses.component";
 import Contact from "./components/Contact/contact.component";
 import Footer from "./components/Footer/footer.component";
 import Loader from "./components/Loader/loader.component";
+import hoverEffectComponent from "./components/Hover-Effect/hover-effect.component";
+import img1 from "./assets/images/img-1.jpg";
+import img2 from "./assets/images/img-2.jpg";
+import overlay from "./assets/images/leaf.jpg";
 
 import "./App.css";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    var image_animate = new hoverEffectComponent({
+      parent: document.querySelector(".bg-img"),
+      intensity: 0.3,
+      image1: img1,
+      image2: img2,
+      displacementImage: overlay,
+    });
+  });
 
   useEffect(() => {
     setTimeout(() => {
