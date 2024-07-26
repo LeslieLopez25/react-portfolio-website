@@ -8,3 +8,17 @@
     font-weight: 500;
     margin: 0.625rem 0 0.4375rem 0;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+    .interests .interests-content .card {
+        margin-bottom: 1.25rem;
+        width: calc(50% - 0.625rem);
+    }
+}
+
+@media (max-width: 40.625em) {
+    .interests .interests-content .card {
+        width: 100%;
+    }
+}
