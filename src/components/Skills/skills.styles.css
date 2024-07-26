@@ -26,3 +26,36 @@
 .skills .tech-icons:hover {
     box-shadow: 0 0 0.5rem 0.1875rem hsl(210.1, 100%, 50%);
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+    .skills .skills-content {
+        grid-template-columns: 1fr;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 40.625em) {
+    .skills .skills-content {
+        grid-template-columns: 1fr;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .skills .skills-content .text {
+        text-align: center;
+    }
+
+    .skills .tech-icons {
+        margin: 0.625rem 0;
+    }
+}
+
+@media (max-width: 23em) {
+    .skills .skills-content {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
