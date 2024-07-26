@@ -127,3 +127,20 @@ a:visited {
 a:hover {
     color: hsl(0, 0%, 100%);
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 23em) {
+    .contact .contact-content .info .sub-title {
+        word-break: break-word;
+    }
+}
