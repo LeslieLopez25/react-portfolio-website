@@ -30,3 +30,28 @@
 .projects .btn-demo:hover {
     background: hsl(210.1, 100%, 50%);
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 23em) and (max-width: 75em) {
+    .projects-content .card {
+        width: calc(50% - 1.25rem);
+    }
+
+    .projects .btn-code,
+    .projects .btn-demo {
+        padding: 0.625rem 0.46875rem;
+    }
+}
+
+@media (max-width: 50em) {
+    .projects .projects-content .card {
+        margin-bottom: 1.25rem;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 40.625em) {
+    .projects .projects-content .card {
+        width: 100%;
+    }
+}
