@@ -46,3 +46,37 @@
     background: none;
     color: hsl(210.1, 100%, 50%);
 }
+
+/* MEDIA QUERIES */
+@media (min-width: 23em) and (max-width: 75em) {
+    .about .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-content .left {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 50em) {
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 3.75rem;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+}
