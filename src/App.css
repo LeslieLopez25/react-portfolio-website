@@ -124,3 +124,22 @@ section .title {
   width: 100%;
   height: auto;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+  .max-width {
+    max-width: 58.125rem;
+  }
+}
+
+@media (max-width: 40.625em) {
+  .max-width {
+    padding: 0 1.4375rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .max-width {
+    padding: 0 0.9375rem;
+  }
+}
