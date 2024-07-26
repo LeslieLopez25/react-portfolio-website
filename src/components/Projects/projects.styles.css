@@ -16,6 +16,8 @@
     border: hsl(210.1, 100%, 50%) solid 2px;
     border-radius: 4px;
     margin: 0.625rem;
+    display: inline-block;
+    text-align: center;
 }
 
 .projects .btn-code {
@@ -48,10 +50,22 @@
         margin-bottom: 1.25rem;
         width: 100vw;
     }
+
+    .projects .btn-code,
+    .projects .btn-demo {
+        margin: 0.2rem;
+        padding: 0.5rem 0.625rem;
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 40.625em) {
     .projects .projects-content .card {
         width: 100%;
+    }
+
+    .projects .projects-content .card {
+        width: 100%;
+        padding: 0.5rem 0;
     }
 }
