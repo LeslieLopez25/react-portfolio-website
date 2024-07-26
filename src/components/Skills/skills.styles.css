@@ -20,7 +20,7 @@
     height: 5rem;
     border-radius: 4px;
     transition: all 0.3s ease;
-    margin: 0.625rem;
+    margin: 0.1rem;
 }
 
 .skills .tech-icons:hover {
@@ -45,10 +45,6 @@
 
     .skills .skills-content .text {
         text-align: center;
-    }
-
-    .skills .tech-icons {
-        margin: 0.625rem 0;
     }
 }
 
