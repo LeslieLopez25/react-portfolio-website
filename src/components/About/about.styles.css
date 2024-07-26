@@ -3,7 +3,8 @@
 }
 
 .about .about-content .left img {
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     height: 25rem;
     object-fit: cover;
     border-radius: 6px;
