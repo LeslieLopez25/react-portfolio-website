@@ -37,3 +37,33 @@
     font-weight: 500;
     margin: 0.3125rem 0;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+    .home .home-content .text-2 {
+        font-size: 4.375rem;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 2.1875rem;
+    }
+
+    .home .home-content a {
+        font-size: 1.4375rem;
+        padding: 0.625rem 1.875rem;
+    }
+}
+
+@media (max-width: 40.625em) {
+    .home .home-content .text-2 {
+        font-size: 3.75rem;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 2rem;
+    }
+
+    .home .home-content a {
+        font-size: 1.25rem;
+    }
+}
