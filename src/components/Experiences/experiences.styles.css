@@ -77,3 +77,23 @@
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
     border-radius: 100%;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 50em) {
+    .experiences .experiences-content {
+        width: calc(50% - 2rem);
+        margin: 1rem auto auto 11rem;
+    }
+}
+
+@media (max-width: 40.625em) {
+    .experiences .experiences-content {
+        margin: 1rem auto auto 13rem;
+    }
+}
+
+@media (max-width: 23em) {
+    .experiences .dates ul {
+        width: 90vw;
+    }
+}
