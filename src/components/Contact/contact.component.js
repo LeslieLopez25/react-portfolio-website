@@ -61,6 +61,7 @@ export default function Contact() {
               method="POST"
               data-netlify-recaptcha="true"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
                 <div className="field name">
                   <input type="text" placeholder="Name" name="name" required />
