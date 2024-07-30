@@ -19,16 +19,31 @@ export default function Contact() {
     e.preventDefault();
     const form = e.target;
 
+    const formData = Object.fromEntries(new FormData(form).entries());
+    const encodedData = encode({
+      "form-name": form.getAttribute("name"),
+      ...formData,
+    });
+
+    console.log("Encoded Data:", encodedData);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...Object.fromEntries(new FormData(form).entries()),
-      }),
+      body: encodedData,
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+      .then((response) => {
+        console.log("Response:", response);
+        if (response.ok) {
+          alert("Success!");
+        } else {
+          alert("Error: " + response.statusText);
+        }
+      })
+      .catch((error) => {
+        console.error("Submission error:", error);
+        alert("Submission error: " + error);
+      });
   };
 
   return (
