@@ -60,7 +60,6 @@ export default function Contact() {
               netlify
               method="POST"
               data-netlify-recaptcha="true"
-              data-netlify="true"
             >
               <div className="fields">
                 <div className="field name">
