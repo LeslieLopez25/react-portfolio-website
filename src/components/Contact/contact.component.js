@@ -7,6 +7,30 @@ import "../../App.css";
 import "./contact.styles.css";
 
 export default function Contact() {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...Object.fromEntries(new FormData(form).entries()),
+      }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="max-width">
@@ -57,9 +81,10 @@ export default function Contact() {
             <div className="text">Message Me</div>
             <form
               name="contact"
-              netlify
               method="POST"
               data-netlify-recaptcha="true"
+              data-netlify="true"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
