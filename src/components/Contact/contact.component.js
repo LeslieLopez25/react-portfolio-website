@@ -61,7 +61,6 @@ export default function Contact() {
               method="POST"
               data-netlify-recaptcha="true"
               onSubmit="submit"
-              netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
