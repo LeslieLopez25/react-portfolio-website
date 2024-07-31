@@ -57,10 +57,9 @@ export default function Contact() {
             <div className="text">Message Me</div>
             <form
               name="contact"
-              netlify
               method="POST"
+              data-netlify="true"
               data-netlify-recaptcha="true"
-              onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
