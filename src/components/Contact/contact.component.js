@@ -57,10 +57,12 @@ export default function Contact() {
             <div className="text">Message Me</div>
             <form
               name="contact"
-              data-netlify="true"
+              netlify
               method="POST"
               data-netlify-recaptcha="true"
               onSubmit="submit"
+              netlify-honeypot="bot-field"
+              hidden
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="fields">
