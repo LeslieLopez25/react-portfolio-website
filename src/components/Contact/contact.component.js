@@ -10,7 +10,6 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          action="/thank-you.html"
           data-netlify="true"
           data-netlify-recaptcha="true"
         >
@@ -38,9 +37,7 @@ export default function Contact() {
               required
             ></textarea>
           </div>
-
-          <div className="g-recaptcha" data-netlify-recaptcha="true"></div>
-
+          <div data-netlify-recaptcha="true"></div>
           <div className="button">
             <button type="submit">Send Message</button>
           </div>
