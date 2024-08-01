@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form Test</title>
+  <title>Contact Form</title>
 </head>
 
 <body>
   <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
     <input type="hidden" name="form-name" value="contact" />
+
     <p>
       <label>Name: <input type="text" name="name" required /></label>
     </p>
@@ -17,11 +18,17 @@
       <label>Email: <input type="email" name="email" required /></label>
     </p>
     <p>
+      <label>Subject: <input type="text" name="subject" required /></label>
+    </p>
+    <p>
       <label>Message: <textarea name="message" required></textarea></label>
     </p>
+
+    <!-- reCAPTCHA widget -->
     <div data-netlify-recaptcha="true"></div>
+
     <p>
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </p>
   </form>
 </body>
