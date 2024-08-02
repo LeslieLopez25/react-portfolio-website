@@ -81,9 +81,9 @@
 /* MEDIA QUERIES */
 @media (max-width: 50em) {
     .experiences .experiences-content {
-        width: calc(100% - 2rem);
         margin: 1rem auto;
         padding: 1rem;
+        width: calc(100% - 2rem);
     }
 
     .experiences .dates ul {
@@ -113,15 +113,15 @@
     }
 
     .experiences .experiences-content {
-        width: 100%;
         margin: 1rem auto;
         padding: 1rem;
+        width: 100%;
     }
 
     .experiences .dates ul {
+        padding: 2rem;
         width: 90vw;
         right: 0;
-        padding: 2rem;
     }
 
     .experiences h4,
@@ -145,15 +145,15 @@
     }
 
     .experiences .experiences-content {
-        width: 100%;
         margin: 1rem auto;
         padding: 0 1rem;
+        width: 100%;
         text-align: center;
     }
 
     .experiences .dates ul {
-        width: 95vw;
         padding: 1rem;
+        width: 95vw;
         right: 0;
     }
 
