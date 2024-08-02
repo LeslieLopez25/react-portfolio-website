@@ -44,6 +44,10 @@
     margin-bottom: 6.25rem;
 }
 
+.contact .right form .hidden {
+    display: none;
+}
+
 .contact .right form .fields {
     display: flex;
 }
