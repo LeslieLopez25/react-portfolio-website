@@ -1,14 +1,5 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar/navbar.component";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import Home from "./components/Home/home.component";
-import About from "./components/About/about.component";
-import Interests from "./components/Interests/interests.component";
-import Skills from "./components/Skills/skills.component";
-import Projects from "./components/Projects/projects.component";
-import Experiences from "./components/Experiences/experiences.component";
-import Courses from "./components/Courses/courses.component";
-import Contact from "./components/Contact/contact.component";
-import Footer from "./components/Footer/footer.component";
 import Loader from "./components/Loader/loader.component";
 import hoverEffectComponent from "./components/Hover-Effect/hover-effect.component";
 import img1 from "./assets/images/img-1.jpg";
@@ -17,9 +8,24 @@ import overlay from "./assets/images/leaf.jpg";
 
 import "./App.css";
 
+const Navbar = lazy(() => import("./components/Navbar/navbar.component"));
+const About = lazy(() => import("./components/About/about.component"));
+const Interests = lazy(() =>
+  import("./components/Interests/interests.component")
+);
+const Skills = lazy(() => import("./components/Skills/skills.component"));
+const Projects = lazy(() => import("./components/Projects/projects.component"));
+const Experiences = lazy(() =>
+  import("./components/Experiences/experiences.component")
+);
+const Courses = lazy(() => import("./components/Courses/courses.component"));
+const Contact = lazy(() => import("./components/Contact/contact.component"));
+const Footer = lazy(() => import("./components/Footer/footer.component"));
+
 export default function App() {
   const [loading, setLoading] = useState(true);
 
+  // Hover Effect
   useEffect(() => {
     var image_animate = new hoverEffectComponent({
       parent: document.querySelector(".bg-img"),
@@ -28,12 +34,13 @@ export default function App() {
       image2: img2,
       displacementImage: overlay,
     });
-  });
 
-  useEffect(() => {
-    setTimeout(() => {
+    // Timer for Loader Component
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 2500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
@@ -41,17 +48,19 @@ export default function App() {
   }
 
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Interests />
-      <Skills />
-      <Projects />
-      <Experiences />
-      <Courses />
-      <Contact />
-      <Footer />
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div className="App">
+        <Navbar />
+        <Home />
+        <About />
+        <Interests />
+        <Skills />
+        <Projects />
+        <Experiences />
+        <Courses />
+        <Contact />
+        <Footer />
+      </div>
+    </Suspense>
   );
 }
