@@ -25,7 +25,6 @@ const Footer = lazy(() => import("./components/Footer/footer.component"));
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  // Hover Effect
   useEffect(() => {
     var image_animate = new hoverEffectComponent({
       parent: document.querySelector(".bg-img"),
@@ -34,13 +33,12 @@ export default function App() {
       image2: img2,
       displacementImage: overlay,
     });
+  });
 
-    // Timer for Loader Component
-    const timer = setTimeout(() => {
+  useEffect(() => {
+    setTimeout(() => {
       setLoading(false);
     }, 2500);
-
-    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
@@ -48,10 +46,10 @@ export default function App() {
   }
 
   return (
-    <Suspense fallback={<Loader />}>
-      <div className="App">
+    <div className="App">
+      <Home />
+      <Suspense fallback={<Loader />}>
         <Navbar />
-        <Home />
         <About />
         <Interests />
         <Skills />
@@ -60,7 +58,7 @@ export default function App() {
         <Courses />
         <Contact />
         <Footer />
-      </div>
-    </Suspense>
+      </Suspense>
+    </div>
   );
 }
