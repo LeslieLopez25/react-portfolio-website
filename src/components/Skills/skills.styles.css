@@ -16,11 +16,11 @@
 
 .skills .tech-icons {
     background-color: hsl(212.1, 100%, 19.4%);
+    margin: 0.1rem;
     width: 5rem;
     height: 5rem;
     border-radius: 4px;
     transition: all 0.3s ease;
-    margin: 0.1rem;
 }
 
 .skills .tech-icons:hover {
@@ -39,8 +39,8 @@
 @media (max-width: 40.625em) {
     .skills .skills-content {
         grid-template-columns: 1fr;
-        max-width: 70%;
         margin: 0 auto;
+        max-width: 70%;
     }
 
     .skills .skills-content .text {
@@ -51,7 +51,7 @@
 @media (max-width: 23em) {
     .skills .skills-content {
         grid-template-columns: 1fr;
-        max-width: 100%;
         margin: 0 auto;
+        max-width: 100%;
     }
 }
