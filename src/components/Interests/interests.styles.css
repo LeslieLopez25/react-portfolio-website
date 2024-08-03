@@ -12,8 +12,8 @@
 /* MEDIA QUERIES */
 @media (max-width: 50em) {
     .interests .interests-content .card {
-        margin-bottom: 1.25rem;
         width: calc(50% - 0.625rem);
+        margin-bottom: 1.25rem;
     }
 }
 
