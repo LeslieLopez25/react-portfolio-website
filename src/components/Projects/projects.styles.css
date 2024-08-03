@@ -10,13 +10,13 @@
 
 .projects .btn-code,
 .projects .btn-demo {
+    display: inline-block;
     color: hsl(0, 0%, 100%);
     font-size: 1rem;
+    margin: 0.625rem;
     padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
     border: hsl(210.1, 100%, 50%) solid 2px;
     border-radius: 4px;
-    margin: 0.625rem;
-    display: inline-block;
     text-align: center;
 }
 
@@ -53,9 +53,9 @@
 
     .projects .btn-code,
     .projects .btn-demo {
+        font-size: 0.875rem;
         margin: 0.2rem;
         padding: 0.5rem 0.625rem;
-        font-size: 0.875rem;
     }
 }
 
@@ -65,7 +65,7 @@
     }
 
     .projects .projects-content .card {
-        width: 100%;
         padding: 0.5rem 0;
+        width: 100%;
     }
 }
