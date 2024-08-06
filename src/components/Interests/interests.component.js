@@ -19,7 +19,7 @@ export default function Interests() {
               <img
                 className="interests-imgs"
                 src={codingImg}
-                alt="coding"
+                alt="Coding"
                 loading="lazy"
               />
               <h3 className="text">Coding</h3>
@@ -34,7 +34,7 @@ export default function Interests() {
               <img
                 className="interests-imgs"
                 src={mediateImg}
-                alt="meditate"
+                alt="Meditate"
                 loading="lazy"
               />
               <h3 className="text">Meditating</h3>
@@ -50,7 +50,7 @@ export default function Interests() {
               <img
                 className="interests-imgs"
                 src={drawingImg}
-                alt="drawing"
+                alt="Drawing"
                 loading="lazy"
               />
               <h3 className="text">Drawing</h3>
