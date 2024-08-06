@@ -16,10 +16,7 @@ export default function Courses() {
         <div className="courses-content">
           <div className="card">
             <div className="box">
-              <a
-                target="_blank"
-                href="../../assets/courses/UC-Web-Development-Bootcamp.jpg"
-              >
+              <a target="_blank" rel="noopener noreferrer" href={webdevImg}>
                 <img
                   className="course-img"
                   src={webdevImg}
@@ -32,10 +29,7 @@ export default function Courses() {
           </div>
           <div className="card">
             <div className="box">
-              <a
-                target="_blank"
-                href="../../assets/courses/UC-The Complete Web Developer in 2021- Zero to Mastery.jpg"
-              >
+              <a target="_blank" rel="noopener noreferrer" href={zeroImg}>
                 <img
                   className="course-img"
                   src={zeroImg}
@@ -50,10 +44,7 @@ export default function Courses() {
           </div>
           <div className="card">
             <div className="box">
-              <a
-                target="_blank"
-                href="../../assets/courses/Complete-React-Developer.jpg"
-              >
+              <a target="_blank" rel="noopener noreferrer" href={reactImg}>
                 <img
                   className="course-img"
                   src={reactImg}
