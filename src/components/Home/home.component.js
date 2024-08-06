@@ -5,13 +5,13 @@ import "./home.styles.css";
 
 export default function Home() {
   return (
-    <header class="home" id="home">
-      <div class="bg-img"></div>
-      <div class="max-width">
-        <div class="home-content">
-          <h1 class="text-1">Hello, my name is</h1>
-          <h1 class="text-2">Leslie Lopez</h1>
-          <h1 class="text-3">And I'm a Web Developer</h1>
+    <header className="home" id="home">
+      <div className="bg-img"></div>
+      <div className="max-width">
+        <div className="home-content">
+          <p className="text-1">Hello, my name is</p>
+          <h1 className="text-2">Leslie Lopez</h1>
+          <p className="text-3">And I'm a Web Developer</p>
         </div>
       </div>
     </header>
