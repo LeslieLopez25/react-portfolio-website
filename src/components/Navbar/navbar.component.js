@@ -29,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="sticky">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="max-width">
         <div className="logo">
           Portfo<span>lio</span>

@@ -17,10 +17,6 @@ nav {
     background: hsl(210.1, 100%, 50%);
 }
 
-.navbar #sticky {
-    padding: 0.9375rem 0;
-}
-
 .navbar .max-width {
     display: flex;
     align-items: center;
@@ -53,10 +49,6 @@ nav {
 
 .navbar .menu li a:hover {
     color: hsl(212.1, 100%, 19.4%);
-}
-
-.navbar #sticky .menu li a:hover {
-    color: hsl(0, 0%, 100%);
 }
 
 /* MENU BTN */
