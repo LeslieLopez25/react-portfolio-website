@@ -15,7 +15,10 @@ export default function Experiences() {
             <ul>
               <li className="circle">
                 <h4>Zero to Mastery</h4>
-                <h3>Nov 22th, 2021 - Dec 9th, 2021</h3>
+                <h3>
+                  <time dateTime="2021-11-22">Nov 22th, 2021</time> -
+                  <time dateTime="2021-12-09">Dec 9th, 2021</time>
+                </h3>
                 <p>
                   I played a role by enhancing the user experience. I eliminated
                   duplicate footers, ensuring a seamless interface.
@@ -27,7 +30,9 @@ export default function Experiences() {
               </li>
               <li className="circle">
                 <h4>Keiko-Corp</h4>
-                <h3>Nov 29th, 2021</h3>
+                <h3>
+                  <time dateTime="2021-11-29">Nov 29th, 2021</time>
+                </h3>
                 <p>
                   Made significant improvements by overhauling the navigation
                   bar. Through thoughtful design and meticulous attention to
@@ -37,7 +42,10 @@ export default function Experiences() {
               </li>
               <li className="circle">
                 <h4>Travel Guide</h4>
-                <h3>Oct 14th, 2020 - Nov 4th, 2020</h3>
+                <h3>
+                  <time dateTime="2020-10-14">Oct 14th, 2020</time> -
+                  <time dateTime="2020-11-04">Nov 4th, 2020</time>
+                </h3>
                 <p>
                   Contributed to this project by enhancing its functionality and
                   content. Specifically, I revamped the contact page, providing
@@ -50,7 +58,9 @@ export default function Experiences() {
               </li>
               <li className="circle">
                 <h4>Book Tracker</h4>
-                <h3>Oct 15th, 2020</h3>
+                <h3>
+                  <time dateTime="2020-10-15">Oct 15th, 2020</time>
+                </h3>
                 <p>
                   Played a role in enhancing user engagement and design
                   aesthetics. I revamped the newsletter section, making it more
