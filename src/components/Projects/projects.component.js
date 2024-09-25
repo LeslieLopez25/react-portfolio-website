@@ -4,8 +4,7 @@ import sunriseImg from "../../assets/projects/sunrise-apparel.png";
 import smartbrainImg from "../../assets/projects/smart-brain.png";
 import netflixImg from "../../assets/projects/netflix-clone.png";
 import perfectmixImg from "../../assets/projects/perfect-mix.png";
-import yelpcampImg from "../../assets/projects/yelpcamp.png";
-import eliteImg from "../../assets/projects/elite-surge.png";
+import nasaImg from "../../assets/projects/nasa-control.png";
 
 import "../../App.css";
 import "./projects.styles.css";
@@ -194,25 +193,25 @@ export default function Projects() {
             <div className="box">
               <img
                 className="project-img"
-                src={yelpcampImg}
-                alt="YelpCamp"
-                title="YelpCamp"
+                src={nasaImg}
+                alt="NASA Mission Control"
+                title="NASA Mission Control"
                 loading="lazy"
               />
-              <h3 className="text">YelpCamp</h3>
+              <h3 className="text">NASA Mission Control</h3>
               <p>
-                A user-friendly camping site review platform developed with
-                NodeJS, ExpressJS, and MongoDB for robust backend functionality.
-                The frontend, crafted with React, JavaScript, CSS, and
-                Bootstrap, enables users to explore, review, and rate camping
-                sites seamlessly, providing a comprehensive experience
-                encompassing both frontend and backend technologies.
+                NASA Mission Control is a fullstack web application built to
+                manage space missions. It allows users to seamlessly schedule
+                new launches, delete planned missions, and review a
+                comprehensive history of all past launches. The app is powered
+                by React for a dynamic frontend, NodeJS for backend logic,
+                MongoDB for data storage, and Docker for deployment.
               </p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-code"
-                href="https://github.com/LeslieLopez25/YelpCamp"
+                href="https://github.com/LeslieLopez25/nasa-project"
               >
                 Source Code
               </a>
@@ -220,40 +219,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-demo"
-                href="https://misty-jumpsuit-newt.cyclic.app/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <img
-                className="project-img"
-                src={eliteImg}
-                alt="Elite Surge"
-                title="Elite Surge"
-                loading="lazy"
-              />
-              <h3 className="text">Elite Surge</h3>
-              <p>
-                A dynamic gym website designed with React, powered by RapidAPI,
-                and enhanced with Material UI, prioritizing an engaging and
-                interactive frontend experience for fitness enthusiasts.
-              </p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-code"
-                href="https://github.com/LeslieLopez25/react-gym-exercises"
-              >
-                Source Code
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-demo"
-                href="https://gym-exercises-a332b.web.app/"
+                href="https://nasa-project-8xvh.onrender.com/"
               >
                 Live Demo
               </a>
