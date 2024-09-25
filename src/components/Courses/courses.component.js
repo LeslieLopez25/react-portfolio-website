@@ -1,6 +1,6 @@
 import React from "react";
-import webdevImg from "../../assets/courses/UC-Web-Development-Bootcamp.jpg";
-import zeroImg from "../../assets/courses/UC-The Complete Web Developer in 2021- Zero to Mastery.jpg";
+import nodeImg from "../../assets/courses/NodeJS Developer.jpg";
+import webdevImg from "../../assets/courses/UC-The Complete Web Developer in 2021- Zero to Mastery.jpg";
 import reactImg from "../../assets/courses/Complete-React-Developer.jpg";
 
 import "../../App.css";
@@ -16,30 +16,28 @@ export default function Courses() {
         <div className="courses-content">
           <div className="card">
             <div className="box">
-              <a target="_blank" rel="noopener noreferrer" href={webdevImg}>
+              <a target="_blank" rel="noopener noreferrer" href={nodeImg}>
                 <img
                   className="course-img"
-                  src={webdevImg}
-                  alt="web development bootcamp"
+                  src={nodeImg}
+                  alt="node developer course"
                   loading="lazy"
                 />
               </a>
-              <h3 className="text">Web Developer Bootcamp 2020</h3>
+              <h3 className="text">The Complete NodeJS Developer</h3>
             </div>
           </div>
           <div className="card">
             <div className="box">
-              <a target="_blank" rel="noopener noreferrer" href={zeroImg}>
+              <a target="_blank" rel="noopener noreferrer" href={webdevImg}>
                 <img
                   className="course-img"
-                  src={zeroImg}
+                  src={webdevImg}
                   alt="javascript course"
                   loading="lazy"
                 />
               </a>
-              <h3 className="text">
-                The Complete Web Developer in 2021- Zero to Mastery
-              </h3>
+              <h3 className="text">The Complete Web Developer</h3>
             </div>
           </div>
           <div className="card">
