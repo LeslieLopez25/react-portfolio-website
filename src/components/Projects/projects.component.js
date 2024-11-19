@@ -166,10 +166,9 @@ export default function Projects() {
               />
               <h3 className="text">The Perfect Mix</h3>
               <p>
-                A stylish restaurant website meticulously designed with React
-                and CSS, emphasizing a captivating frontend experience for
-                users, showcasing the culinary offerings and ambiance of the
-                restaurant.
+                A fullstack restaurant website with React, Node.js, Express,
+                PostgreSQL, Auth0 for authentication, and Stripe for secure
+                payments, offering a seamless and engaging user experience.
               </p>
               <a
                 target="_blank"
