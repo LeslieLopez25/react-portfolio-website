@@ -13,7 +13,9 @@ import illustratorImg from "../../assets/icons/adobe-illustrator-icon.png";
 import indesignImg from "../../assets/icons/indesign-icon.png";
 import photoshopImg from "../../assets/icons/adobe-photoshop-icon.png";
 import copilotImg from "../../assets/icons/brand-github-copilot.svg";
-import chatgptImg from "../../assets/icons/css.png";
+import chatgptImg from "../../assets/icons/chatgpt-icon.png";
+import mongodbImg from "../../assets/icons/mongodb.png";
+import postgresqlImg from "../../assets/icons/postgresql.png";
 
 import "../../App.css";
 import "./skills.styles.css";
@@ -78,6 +80,20 @@ export default function Skills() {
               src={firebaseImg}
               alt="firebase"
               title="Firebase"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={mongodbImg}
+              alt="mongodb"
+              title="MongoDB"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={postgresqlImg}
+              alt="postgresql"
+              title="PostgresSQL"
               loading="lazy"
             />
           </div>
