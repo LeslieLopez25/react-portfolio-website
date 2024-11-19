@@ -183,7 +183,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-demo"
-                href="https://the-perfect-mix.netlify.app/"
+                href="https://perfect-mix-react.onrender.com/"
               >
                 Live Demo
               </a>
