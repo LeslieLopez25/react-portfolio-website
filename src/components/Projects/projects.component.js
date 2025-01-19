@@ -92,11 +92,11 @@ export default function Projects() {
               <img
                 className="project-img"
                 src={smartbrainImg}
-                alt="Face Recognition Brain"
-                title="Face Recognition Brain"
+                alt="SmartBrain"
+                title="SmartBrain"
                 loading="lazy"
               />
-              <h3 className="text">Face Recognition Brain</h3>
+              <h3 className="text">SmartBrain</h3>
               <p>
                 An online platform utilizing Clarifai AI to detect faces in
                 uploaded jpg or png images. Users create accounts to track the
@@ -107,7 +107,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-code"
-                href="https://github.com/LeslieLopez25/facerecognitionbrain-frontend#face-recognition-brain-adult"
+                href="https://github.com/LeslieLopez25/smartbrain"
               >
                 Source Code
               </a>
@@ -115,7 +115,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-demo"
-                href="https://face-recognition-brain13.netlify.app/"
+                href="https://smartbrain-mtf1.onrender.com/"
               >
                 Live Demo
               </a>
