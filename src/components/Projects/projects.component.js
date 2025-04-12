@@ -132,7 +132,7 @@ export default function Projects() {
               />
               <h3 className="text">MernEats Food Ordering App</h3>
               <p>
-                A full-stack web app built with React, TypeScript, Node.js, and
+                A fullstack web app built with React, TypeScript, Node.js, and
                 MongoDB. Users can browse restaurants, customize orders, and pay
                 with Stripe. Restaurant owners manage menus and orders in real
                 time. Features include Auth0 authentication, Cloudinary uploads,
