@@ -2,7 +2,7 @@ import React from "react";
 import cryptoImg from "../../assets/projects/crypto-app.png";
 import sunriseImg from "../../assets/projects/sunrise-apparel.png";
 import smartbrainImg from "../../assets/projects/smart-brain.png";
-import netflixImg from "../../assets/projects/netflix-clone.png";
+import merneats from "../../assets/projects/merneats-food-ordering.png";
 import perfectmixImg from "../../assets/projects/perfect-mix.png";
 import nasaImg from "../../assets/projects/nasa-control.png";
 
@@ -125,23 +125,24 @@ export default function Projects() {
             <div className="box">
               <img
                 className="project-img"
-                src={netflixImg}
-                alt="Netflix Clone"
-                title="Netflix Clone"
+                src={merneats}
+                alt="MernEats Food Ordering App"
+                title="MernEats Food Ordering App"
                 loading="lazy"
               />
-              <h3 className="text">Netflix Clone</h3>
+              <h3 className="text">MernEats Food Ordering App</h3>
               <p>
-                A Netflix-inspired streaming platform replica developed with
-                React, Redux, and CSS, backed by Firebase and Stripe for
-                seamless functionality spanning both frontend and backend
-                components.
+                A full-stack web app built with React, TypeScript, Node.js, and
+                MongoDB. Users can browse restaurants, customize orders, and pay
+                with Stripe. Restaurant owners manage menus and orders in real
+                time. Features include Auth0 authentication, Cloudinary uploads,
+                dynamic filtering, and a clean UI styled with shadcn/ui.
               </p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-code"
-                href="https://github.com/LeslieLopez25/netflix-clone"
+                href="https://github.com/LeslieLopez25/mern-food-ordering-app"
               >
                 Source Code
               </a>
@@ -149,7 +150,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-demo"
-                href="https://netflix-clone-26c81.web.app/"
+                href="https://mern-food-ordering-app-frontend-60f4.onrender.com/"
               >
                 Live Demo
               </a>
