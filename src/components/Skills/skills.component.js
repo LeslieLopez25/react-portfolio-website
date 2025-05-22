@@ -16,6 +16,11 @@ import copilotImg from "../../assets/icons/brand-github-copilot.svg";
 import chatgptImg from "../../assets/icons/chatgpt-icon.png";
 import mongodbImg from "../../assets/icons/mongodb.png";
 import postgresqlImg from "../../assets/icons/postgresql.png";
+import prismaImg from "../../assets/icons/prisma.png";
+import nodejsImg from "../../assets/icons/nodejs.png";
+import expressjsImg from "../../assets/icons/express.png";
+import shadcnImg from "../../assets/icons/shadcnui.png";
+import typescriptImg from "../../assets/icons/typescript.png";
 
 import "../../App.css";
 import "./skills.styles.css";
@@ -72,6 +77,20 @@ export default function Skills() {
               title="Bootstrap"
               loading="lazy"
             />
+            <img
+              className="tech-icons"
+              src={shadcnImg}
+              alt="shadcn"
+              title="Shadcn"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={typescriptImg}
+              alt="typescript"
+              title="TypeScript"
+              loading="lazy"
+            />
           </div>
           <div className="column center">
             <h3 className="text">Backend Development</h3>
@@ -94,6 +113,34 @@ export default function Skills() {
               src={postgresqlImg}
               alt="postgresql"
               title="PostgresSQL"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={prismaImg}
+              alt="prisma"
+              title="Prisma"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={nodejsImg}
+              alt="nodejs"
+              title="NodeJS"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={expressjsImg}
+              alt="expressjs"
+              title="ExpressJS"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={typescriptImg}
+              alt="typescript"
+              title="TypeScript"
               loading="lazy"
             />
           </div>
