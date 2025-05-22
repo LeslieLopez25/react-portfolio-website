@@ -18,12 +18,13 @@ export default function About() {
           <div className="column right">
             <h3 className="text">I'm Leslie Lopez</h3>
             <p>
-              Hello! I'm a passionate React frontend developer dedicated to
-              mastering the art of creating seamless user experiences. Focused
-              on becoming a full-stack React developer, I thrive on continuous
-              learning and problem-solving. If you're looking for a dedicated
-              and adaptable web developer with a strong emphasis on React, let's
-              connect and create exceptional projects together!
+              Hey there! I’m a full stack React developer who loves building web
+              apps that look great and work even better. I build smooth,
+              user-friendly frontends with React and hook them up to solid
+              backends using Node.js and TypeScript. I’m always learning, always
+              experimenting, and always up for solving interesting problems. If
+              you're into clean code, good UI, and creative projects — let’s
+              connect!
               <br />
               <br />
               Let's embark on this exciting tech journey together!
