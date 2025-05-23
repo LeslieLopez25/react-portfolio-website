@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer>
       <FontAwesomeIcon icon={farCopyright} className="icon" />
-      {currentYear} Leslie Lopez
+      {currentYear} Leslie Lopez Anaya
     </footer>
   );
 }
