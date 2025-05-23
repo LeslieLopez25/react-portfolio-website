@@ -16,7 +16,7 @@ export default function About() {
             <img src={profileImage} alt="profile pic" loading="lazy" />
           </div>
           <div className="column right">
-            <h3 className="text">I'm Leslie Lopez</h3>
+            <h3 className="text">I'm Leslie Lopez Anaya</h3>
             <p>
               Hey there! I’m a full stack React developer who loves building web
               apps that look great and work even better. I build smooth,
