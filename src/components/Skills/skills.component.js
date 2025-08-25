@@ -21,6 +21,7 @@ import nodejsImg from "../../assets/icons/nodejs.png";
 import expressjsImg from "../../assets/icons/express.png";
 import shadcnImg from "../../assets/icons/shadcnui.png";
 import typescriptImg from "../../assets/icons/typescript.png";
+import playwrightImg from "../../assets/icons/Playwrite.png";
 
 import "../../App.css";
 import "./skills.styles.css";
@@ -89,6 +90,13 @@ export default function Skills() {
               src={typescriptImg}
               alt="typescript"
               title="TypeScript"
+              loading="lazy"
+            />
+            <img
+              className="tech-icons"
+              src={playwrightImg}
+              alt="playwright"
+              title="Playwright"
               loading="lazy"
             />
           </div>
