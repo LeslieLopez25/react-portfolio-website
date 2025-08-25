@@ -1,5 +1,5 @@
 import React from "react";
-import cryptoImg from "../../assets/projects/crypto-app.png";
+import bookingImg from "../../assets/projects/booking-app.png";
 import sunriseImg from "../../assets/projects/sunrise-apparel.png";
 import smartbrainImg from "../../assets/projects/smartbrain.png";
 import merneats from "../../assets/projects/merneats-food-ordering.png";
@@ -21,23 +21,26 @@ export default function Projects() {
             <div className="box">
               <img
                 className="project-img"
-                src={cryptoImg}
-                alt="Crypto App"
-                title="Crypto App"
+                src={bookingImg}
+                alt="Booking App"
+                title="Booking App"
                 loading="lazy"
               />
-              <h3 className="text">Crypto App</h3>
+              <h3 className="text">Merns Holiday Booking App</h3>
               <p>
-                A comprehensive cryptocurrency application, crafted with React,
-                enhanced by the sleek aesthetics of Tailwind CSS, and powered by
-                Firebase for a seamless user experience across frontend and
-                backend.
+                A full-stack hotel booking application built with the MERN stack
+                (MongoDB, Express, React, Node.js) and TypeScript. Users can
+                search, create, and book hotels, manage their current
+                reservations through a dedicated dashboard, and view past stays
+                in a booking history section. The app features secure
+                authentication with JWT, responsive design with TailwindCSS, and
+                seamless data handling via REST APIs and MongoDB.
               </p>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-code"
-                href="https://github.com/LeslieLopez25/cryptocurrency-project"
+                href="https://github.com/LeslieLopez25/mern-booking-app"
               >
                 Source Code
               </a>
@@ -45,7 +48,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-demo"
-                href="https://cryptocurrencybase-fb04c.web.app/"
+                href="https://mern-booking-app-iaa4.onrender.com/"
               >
                 Live Demo
               </a>
