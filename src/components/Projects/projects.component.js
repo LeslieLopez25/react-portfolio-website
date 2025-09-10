@@ -171,8 +171,9 @@ export default function Projects() {
               <h3 className="text">The Perfect Mix</h3>
               <p>
                 A fullstack restaurant website with React, Node.js, Express,
-                PostgreSQL, Auth0 for authentication, and Stripe for secure
-                payments, offering a seamless and engaging user experience.
+                PostgreSQL, custom middleware for security, Auth0 for
+                authentication, and Stripe for secure payments, offering a
+                seamless and engaging user experience.
               </p>
               <a
                 target="_blank"
