@@ -128,41 +128,6 @@ export default function Projects() {
             <div className="box">
               <img
                 className="project-img"
-                src={merneats}
-                alt="MernEats Food Ordering App"
-                title="MernEats Food Ordering App"
-                loading="lazy"
-              />
-              <h3 className="text">MernEats Food Ordering App</h3>
-              <p>
-                A fullstack web app built with React, TypeScript, Node.js, and
-                MongoDB. Users can browse restaurants, customize orders, and pay
-                with Stripe. Restaurant owners manage menus and orders in real
-                time. Features include Auth0 authentication, Cloudinary uploads,
-                dynamic filtering, and a clean UI styled with shadcn/ui.
-              </p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-code"
-                href="https://github.com/LeslieLopez25/mern-food-ordering-app"
-              >
-                Source Code
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-demo"
-                href="https://mern-food-ordering-app-frontend-60f4.onrender.com/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <img
-                className="project-img"
                 src={perfectmixImg}
                 alt="The Perfect Mix"
                 title="The Perfect Mix"
@@ -188,42 +153,6 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="btn-demo"
                 href="https://perfect-mix-react.onrender.com/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <img
-                className="project-img"
-                src={nasaImg}
-                alt="NASA Mission Control"
-                title="NASA Mission Control"
-                loading="lazy"
-              />
-              <h3 className="text">NASA Mission Control</h3>
-              <p>
-                NASA Mission Control is a fullstack web application built to
-                manage space missions. It allows users to seamlessly schedule
-                new launches, delete planned missions, and review a
-                comprehensive history of all past launches. The app is powered
-                by React for a dynamic frontend, NodeJS for backend logic,
-                MongoDB for data storage, and Docker for deployment.
-              </p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-code"
-                href="https://github.com/LeslieLopez25/nasa-project"
-              >
-                Source Code
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-demo"
-                href="https://nasa-project-8xvh.onrender.com/"
               >
                 Live Demo
               </a>

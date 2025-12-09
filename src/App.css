@@ -78,13 +78,19 @@ section .title {
 }
 
 .about-content,
-.interests-content,
-.projects-content,
-.courses-content,
+.courses-content
 .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+}
+
+.projects-content,
+.interests-content
+{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
