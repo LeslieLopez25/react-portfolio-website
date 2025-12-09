@@ -5,7 +5,6 @@ import reactImg from "../../assets/icons/react.png";
 import sassImg from "../../assets/icons/sass.png";
 import tailwindImg from "../../assets/icons/tailwind.png";
 import bootstrapImg from "../../assets/icons/bootstrap.png";
-import firebaseImg from "../../assets/icons/firebase.png";
 import gitImg from "../../assets/icons/git.png";
 import githubImg from "../../assets/icons/github.png";
 import visualImg from "../../assets/icons/vscode.png";
@@ -104,13 +103,6 @@ export default function Skills() {
             <h3 className="text">Backend Development</h3>
             <img
               className="tech-icons"
-              src={firebaseImg}
-              alt="firebase"
-              title="Firebase"
-              loading="lazy"
-            />
-            <img
-              className="tech-icons"
               src={mongodbImg}
               alt="mongodb"
               title="MongoDB"
@@ -142,13 +134,6 @@ export default function Skills() {
               src={expressjsImg}
               alt="expressjs"
               title="ExpressJS"
-              loading="lazy"
-            />
-            <img
-              className="tech-icons"
-              src={typescriptImg}
-              alt="typescript"
-              title="TypeScript"
               loading="lazy"
             />
           </div>
