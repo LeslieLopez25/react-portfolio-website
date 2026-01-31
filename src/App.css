@@ -87,7 +87,9 @@ section .title {
 }
 
 .projects-content,
-.interests-content
+.interests-content,
+.courses-content,
+.contact-content
 {
   display: flex;
   flex-wrap: wrap;
