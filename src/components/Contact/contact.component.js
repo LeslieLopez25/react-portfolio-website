@@ -1,12 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "@emailjs/browser";
 
 import "../../App.css";
 import "./contact.styles.css";
 
 export default function Contact() {
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+})
+
+const [formStatus, setFormStatus] = useState({
+  submitting: false,
+  success: false,
+  error: false,
+  message: "",
+})
+
+const handleInputChange = (e) => {
+  const {name, value} = e.target
+  setFormData((prev) => ({
+    ...prev,
+    [name]: value
+  }))
+}
+
+const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  setFormStatus({
+    submitting: true,
+    success: false,
+    error: false,
+    message: "",
+  })
+
+  try {
+    await emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        time: new Date().toLocaleString("en-US", {
+          dateStyle: "medium",
+          timeStyle: "short",
+        }),
+      }
+    )
+
+    setFormStatus({
+    submitting: false,
+    success: true,
+    error: false,
+    message: "Message sent successfully!",
+  })
+
+  setFormData({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
+  } catch (error) {
+    setFormStatus({
+    submitting: false,
+    success: false,
+    error: true,
+    message: "Failed to send message. Please try again.",
+  })
+  }
+}
+
   return (
     <section className="contact" id="contact">
       <div className="max-width">
@@ -58,6 +130,7 @@ export default function Contact() {
             <form
               name="contact"
               method="POST"
+              onSubmit={handleSubmit}
               netlify-honeypot="bot-field"
               data-netlify="true"
             >
@@ -70,13 +143,20 @@ export default function Contact() {
               </div>
               <div className="fields">
                 <div className="field name">
-                  <input type="text" placeholder="Name" name="name" required />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div className="field email">
                   <input
                     type="email"
                     placeholder="Email"
                     name="email"
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -86,6 +166,7 @@ export default function Contact() {
                   type="text"
                   placeholder="Subject"
                   name="subject"
+                  onChange={handleInputChange}
                   required
                 />
               </div>
@@ -95,11 +176,22 @@ export default function Contact() {
                   rows="10"
                   placeholder="Message.."
                   name="message"
+                  onChange={handleInputChange}
                   required
                 ></textarea>
               </div>
               <div className="button">
-                <button type="submit">Send Message</button>
+                <button type="submit" disabled={formStatus.submitting}>
+                  {formStatus.submitting ? "Sending..." : "Send Message"}
+                </button>
+
+                {formStatus.message && (
+                  <p
+                    className={`form-status ${formStatus.success ? "success" : "error"}`}
+                  >
+                    {formStatus.message}
+                  </p>
+                )}
               </div>
             </form>
           </div>

@@ -5,6 +5,7 @@ import hoverEffectComponent from "./components/Hover-Effect/hover-effect.compone
 import img1 from "./assets/images/img-1.jpg";
 import img2 from "./assets/images/img-2.jpg";
 import overlay from "./assets/images/leaf.jpg";
+import emailjs from "@emailjs/browser";
 
 import "./App.css";
 
@@ -24,6 +25,12 @@ const Footer = lazy(() => import("./components/Footer/footer.component"));
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+setIsLoaded(true);
+emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+  }, []);
 
   useEffect(() => {
     var image_animate = new hoverEffectComponent({
@@ -46,7 +53,7 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className={`App ${isLoaded ? "loaded" : ""}`}>
       <Home />
       <Suspense fallback={<Loader />}>
         <Navbar />
