@@ -128,19 +128,8 @@ const handleSubmit = async (e) => {
           <div className="column right">
             <div className="text">Message Me</div>
             <form
-              name="contact"
-              method="POST"
               onSubmit={handleSubmit}
-              netlify-honeypot="bot-field"
-              data-netlify="true"
             >
-              <input type="hidden" name="form-name" value="contact" />
-
-              <div hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" />
-                </label>
-              </div>
               <div className="fields">
                 <div className="field name">
                   <input
