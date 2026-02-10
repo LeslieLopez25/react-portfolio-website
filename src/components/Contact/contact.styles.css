@@ -52,7 +52,6 @@
 .contact .right form .fields .field {
     margin-bottom: 0.9375rem;
     width: 100%;
-    height: 2.8125rem;
 }
 
 .contact .right form .textarea {
@@ -84,6 +83,10 @@
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
     border-color: hsl(0, 0%, 45.9%);
+}
+
+.contact .right form .field input {
+    height: 2.8125rem;
 }
 
 .contact .right form .textarea textarea {
@@ -128,26 +131,6 @@ a:visited {
 
 a:hover {
     color: hsl(0, 0%, 100%);
-}
-
-.form-status {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-weight: 500;
-}
-
-.form-status.success{
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.2);
-    color: #4ade80;
-}
-
-.form-status.error{
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.2);
-    color: #f87171;
 }
 
 /* MEDIA QUERIES */

@@ -78,7 +78,7 @@ section .title {
 }
 
 .about-content,
-.courses-content
+.courses-content,
 .contact-content {
   display: flex;
   flex-wrap: wrap;

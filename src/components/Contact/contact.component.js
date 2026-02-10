@@ -8,76 +8,92 @@ import "../../App.css";
 import "./contact.styles.css";
 
 export default function Contact() {
-const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-})
+  const [formStartTime] = useState(Date.now());
 
-const [formStatus, setFormStatus] = useState({
-  submitting: false,
-  success: false,
-  error: false,
-  message: "",
-})
-
-const handleInputChange = (e) => {
-  const {name, value} = e.target
-  setFormData((prev) => ({
-    ...prev,
-    [name]: value
-  }))
-}
-
-const handleSubmit = async (e) => {
-  e.preventDefault()
-
-  setFormStatus({
-    submitting: true,
-    success: false,
-    error: false,
-    message: "",
-  })
-
-  try {
-    await emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      {
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        time: new Date().toLocaleString("en-US", {
-          dateStyle: "medium",
-          timeStyle: "short",
-        }),
-      }
-    )
-
-    setFormStatus({
-    submitting: false,
-    success: true,
-    error: false,
-    message: "Message sent successfully!",
-  })
-
-  setFormData({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-  })
-  } catch (error) {
-    setFormStatus({
+  });
+
+  const [formStatus, setFormStatus] = useState({
     submitting: false,
     success: false,
-    error: true,
-    message: "Failed to send message. Please try again.",
-  })
-  }
-}
+    error: false,
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    // Check honeypot field
+    if (form.company.value) {
+      return;
+    }
+
+    // Time-based spam check
+    const timeElapsed = Date.now() - formStartTime;
+
+    if (timeElapsed < 3000) {
+      return;
+    }
+
+    setFormStatus({
+      submitting: true,
+      success: false,
+      error: false,
+      message: "",
+    });
+
+    try {
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          time: new Date().toLocaleString("en-US", {
+            dateStyle: "medium",
+            timeStyle: "short",
+          }),
+        },
+      );
+
+      setFormStatus({
+        submitting: false,
+        success: true,
+        error: false,
+        message: "Message sent successfully!",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      setFormStatus({
+        submitting: false,
+        success: false,
+        error: true,
+        message: "Failed to send message. Please try again.",
+      });
+    }
+  };
 
   return (
     <section className="contact" id="contact">
@@ -127,9 +143,15 @@ const handleSubmit = async (e) => {
           </div>
           <div className="column right">
             <div className="text">Message Me</div>
-            <form
-              onSubmit={handleSubmit}
-            >
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="company"
+                tabIndex="-1"
+                autoComplete="off"
+                style={{ display: "none" }}
+              />
+
               <div className="fields">
                 <div className="field name">
                   <input
