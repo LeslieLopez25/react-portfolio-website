@@ -8,7 +8,9 @@ import "../../App.css";
 import "./contact.styles.css";
 
 export default function Contact() {
-  const [formStartTime] = useState(Date.now());
+  const [formStartTime, setFormStartTime] = useState(null);
+
+  const RATE_LIMIT_MS = 60 * 1000;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -25,6 +27,11 @@ export default function Contact() {
   });
 
   const handleInputChange = (e) => {
+    // Time-based spam check
+    if (!formStartTime) {
+      setFormStartTime(Date.now());
+    }
+
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -42,10 +49,12 @@ export default function Contact() {
       return;
     }
 
-    // Time-based spam check
-    const timeElapsed = Date.now() - formStartTime;
+    if (!formStartTime || Date.now() - formStartTime < 3000) {
+      return;
+    }
 
-    if (timeElapsed < 3000) {
+    const lastSent = localStorage.getItem("lastEmailSent");
+    if (lastSent && Date.now() - Number(lastSent) < RATE_LIMIT_MS) {
       return;
     }
 
@@ -72,6 +81,10 @@ export default function Contact() {
         },
       );
 
+      localStorage.setItem("lastEmailSent", Date.now());
+
+      setFormStartTime(null);
+
       setFormStatus({
         submitting: false,
         success: true,
@@ -93,6 +106,11 @@ export default function Contact() {
         message: "Failed to send message. Please try again.",
       });
     }
+  };
+
+  const isRateLimited = () => {
+    const lastSent = localStorage.getItem("lastEmailSent");
+    return lastSent && Date.now() - Number(lastSent) < RATE_LIMIT_MS;
   };
 
   return (
@@ -192,8 +210,15 @@ export default function Contact() {
                 ></textarea>
               </div>
               <div className="button">
-                <button type="submit" disabled={formStatus.submitting}>
-                  {formStatus.submitting ? "Sending..." : "Send Message"}
+                <button
+                  type="submit"
+                  disabled={formStatus.submitting || isRateLimited()}
+                >
+                  {formStatus.submitting
+                    ? "Sending..."
+                    : isRateLimited()
+                      ? "Please wait..."
+                      : "Send Message"}
                 </button>
 
                 {formStatus.message && (
