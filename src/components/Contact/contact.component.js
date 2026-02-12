@@ -82,6 +82,10 @@ export default function Contact() {
         },
       );
 
+      if (!Response.ok) {
+        throw new Error("Failed to send message");
+      }
+
       localStorage.setItem("lastEmailSent", Date.now());
 
       setFormStartTime(null);
