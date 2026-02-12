@@ -65,7 +65,7 @@ export default function Contact() {
     });
 
     try {
-      await fetch(
+      const res = await fetch(
         "https://leslie-lopez-anaya-backend.onrender.com/send-email",
         {
           method: "POST",
@@ -82,8 +82,9 @@ export default function Contact() {
         },
       );
 
-      if (!Response.ok) {
-        throw new Error("Failed to send message");
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Failed to send message");
       }
 
       localStorage.setItem("lastEmailSent", Date.now());
