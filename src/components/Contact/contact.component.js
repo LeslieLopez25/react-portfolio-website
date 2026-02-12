@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import emailjs from "@emailjs/browser";
 
 import "../../App.css";
 import "./contact.styles.css";
@@ -66,17 +65,19 @@ export default function Contact() {
     });
 
     try {
-      await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      await fetch(
+        "https://leslie-lopez-anaya-backend.onrender.com/send-email",
         {
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          time: new Date().toLocaleString("en-US", {
-            dateStyle: "medium",
-            timeStyle: "short",
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            time: new Date().toLocaleString("en-US", {
+              dateStyle: "medium",
+              timeStyle: "short",
+            }),
           }),
         },
       );
