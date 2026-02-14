@@ -89,6 +89,10 @@ export default function Contact() {
 
       localStorage.setItem("lastEmailSent", Date.now());
 
+      setTimeout(() => {
+        localStorage.removeItem("lastEmailSent");
+      }, RATE_LIMIT_MS);
+
       setFormStartTime(null);
 
       setFormStatus({
@@ -182,6 +186,7 @@ export default function Contact() {
                     type="text"
                     placeholder="Name"
                     name="name"
+                    value={formData.name}
                     onChange={handleInputChange}
                     required
                   />
@@ -191,6 +196,7 @@ export default function Contact() {
                     type="email"
                     placeholder="Email"
                     name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
                     required
                   />
@@ -201,6 +207,7 @@ export default function Contact() {
                   type="text"
                   placeholder="Subject"
                   name="subject"
+                  value={formData.subject}
                   onChange={handleInputChange}
                   required
                 />
@@ -211,6 +218,7 @@ export default function Contact() {
                   rows="10"
                   placeholder="Message.."
                   name="message"
+                  value={formData.message}
                   onChange={handleInputChange}
                   required
                 ></textarea>
