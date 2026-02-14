@@ -239,7 +239,7 @@ export default function Contact() {
                   <p
                     className={`form-status ${formStatus.success ? "success" : "error"}`}
                   >
-                    {formStatus.message}
+                    {formStatus.message || "\u00A0"}
                   </p>
                 )}
               </div>
