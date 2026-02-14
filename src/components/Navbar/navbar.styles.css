@@ -1,145 +1,147 @@
 nav {
-    background: hsl(209.5, 100%, 22%, 0.5);
+  background: hsl(209.5, 100%, 22%, 0.5);
 }
 
 .navbar {
-    background: hsl(209.5, 100%, 22%, 0.5);
-    font-family: "Ubuntu", sans-serif;
-    padding: 1.25rem 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    transition: all 0.3s ease;
-    z-index: 100;
+  background: hsl(209.5, 100%, 22%, 0.5);
+  font-family: "Ubuntu", sans-serif;
+  padding: 1.25rem 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .navbar.scrolled {
-    background: hsl(210.1, 100%, 50%);
+  background: hsl(210.1, 100%, 50%);
 }
 
 .navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar .logo {
-    color: hsl(0, 0%, 100%);
-    font-size: 2.1875rem;
-    font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  font-size: 2.1875rem;
+  font-weight: 600;
 }
 
 .navbar .logo span {
-    color: hsl(212.1, 100%, 19.4%);
+  color: hsl(212.1, 100%, 19.4%);
 }
 
 .navbar .menu li {
-    display: inline-block;
-    list-style: none;
+  display: inline-block;
+  list-style: none;
 }
 
 .navbar .menu li a {
-    display: block;
-    color: hsl(0, 0%, 100%);
-    font-size: 1.125rem;
-    font-weight: 500;
-    margin-left: 1.5625rem;
-    transition: color 0.3s ease;
+  display: block;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-left: 1.5625rem;
+  transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
-    color: hsl(212.1, 100%, 19.4%);
+  color: hsl(212.1, 100%, 19.4%);
 }
 
 /* MENU BTN */
 .menu-btn {
-    display: none;
-    color: hsl(0, 0%, 100%);
-    font-size: 1.4375rem;
-    cursor: pointer;
+  display: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4375rem;
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES */
 @media (min-width: 23em) and (max-width: 75em) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
 
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
 
-    .navbar .menu {
-        background: hsl(212.7, 100%, 6.5%);
-        padding-top: 3.125rem;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
+  .navbar .menu {
+    background: hsl(212.7, 100%, 6.5%);
+    padding-top: 3.125rem;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .navbar .menu.active {
-        left: 0;
-    }
+  .navbar .menu.active {
+    left: 0;
+  }
 
-    .navbar .menu li {
-        display: block;
-    }
+  .navbar .menu li {
+    display: block;
+  }
 
-    .navbar .menu li a {
-        display: inline-block;
-        color: hsl(0, 0%, 100%);
-        font-size: 1.5625rem;
-        margin: 1.25rem 0;
-    }
+  .navbar .menu li a {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5625rem;
+    margin: 1.25rem 0;
+  }
 
-    .navbar .menu li a:hover {
-        color: hsl(210.1, 100%, 50%);
-    }
+  .navbar .menu li a:hover {
+    color: hsl(210.1, 100%, 50%);
+  }
 }
 
 @media (max-width: 23em) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
 
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
 
-    .navbar .menu {
-        background: hsl(212.7, 100%, 6.5%);
-        padding-top: 3.125rem;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
+  .navbar .menu {
+    background: hsl(212.7, 100%, 6.5%);
+    padding-top: 3.125rem;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
 
-    .navbar .menu.active {
-        left: 0;
-    }
+  .navbar .menu.active {
+    left: 0;
+  }
 
-    .navbar .menu li {
-        display: block;
-    }
+  .navbar .menu li {
+    display: block;
+  }
 
-    .navbar .menu li a {
-        display: inline-block;
-        color: hsl(0, 0%, 100%);
-        font-size: 1.5625rem;
-        margin: 1.25rem 0;
-    }
+  .navbar .menu li a {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5625rem;
+    margin: 1.25rem 0;
+  }
 
-    .navbar .menu li a:hover {
-        color: hsl(210.1, 100%, 50%);
-    }
+  .navbar .menu li a:hover {
+    color: hsl(210.1, 100%, 50%);
+  }
 }
