@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,10 +18,14 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 5.5rem;
+}
+
 header,
 main,
 section {
-  padding: 6.25rem 0;
+  padding: 6.25rem;
 }
 
 header,
@@ -89,8 +93,7 @@ section .title {
 .projects-content,
 .interests-content,
 .courses-content,
-.contact-content
-{
+.contact-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

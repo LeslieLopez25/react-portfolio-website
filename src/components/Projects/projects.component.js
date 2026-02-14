@@ -2,9 +2,7 @@ import React from "react";
 import bookingImg from "../../assets/projects/booking-app.png";
 import sunriseImg from "../../assets/projects/sunrise-apparel.png";
 import smartbrainImg from "../../assets/projects/smartbrain.png";
-import merneats from "../../assets/projects/merneats-food-ordering.png";
 import perfectmixImg from "../../assets/projects/perfect-mix.png";
-import nasaImg from "../../assets/projects/nasa-control.png";
 
 import "../../App.css";
 import "./projects.styles.css";
