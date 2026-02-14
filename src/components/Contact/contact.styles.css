@@ -2,6 +2,10 @@
   width: calc(50% - 1.875rem);
 }
 
+.contact .contact-content {
+  align-items: flex-start;
+}
+
 .contact .contact-content .text {
   font-size: 1.4375rem;
   font-weight: 600;
