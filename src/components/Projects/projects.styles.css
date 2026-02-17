@@ -1,71 +1,73 @@
 .projects .projects-content .card .text {
-    font-size: 1.5625rem;
-    font-weight: 500;
-    margin: 0.625rem 0 0.4375rem 0;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  margin: 0.625rem 0 0.4375rem 0;
 }
 
 .projects .projects-content .card p {
-    padding-bottom: 1.5625rem;
+  padding-bottom: 1.5625rem;
 }
 
 .projects .btn-code,
 .projects .btn-demo {
-    display: inline-block;
-    color: hsl(0, 0%, 100%);
-    font-size: 1rem;
-    margin: 0.625rem;
-    padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
-    border: hsl(210.1, 100%, 50%) solid 2px;
-    border-radius: 4px;
-    text-align: center;
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  margin: 0.625rem;
+  padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+  border: hsl(210.1, 100%, 50%) solid 2px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .projects .btn-code {
-    background: hsl(210.1, 100%, 50%);
+  background: hsl(210.1, 100%, 50%);
 }
 
 .projects .btn-code:hover {
-    background: none;
-    border: hsl(210.1, 100%, 50%) solid 2px;
+  background: none;
+  border: hsl(210.1, 100%, 50%) solid 2px;
 }
 
 .projects .btn-demo:hover {
-    background: hsl(210.1, 100%, 50%);
+  background: hsl(210.1, 100%, 50%);
 }
 
 /* MEDIA QUERIES */
 @media (min-width: 23em) and (max-width: 75em) {
-    .projects-content .card {
-        width: calc(50% - 1.25rem);
-    }
+  .projects-content .card {
+    width: calc(50% - 1.25rem);
+  }
 
-    .projects .btn-code,
-    .projects .btn-demo {
-        padding: 0.625rem 0.46875rem;
-    }
+  .projects .btn-code,
+  .projects .btn-demo {
+    padding: 0.625rem 0.46875rem;
+  }
 }
 
 @media (max-width: 50em) {
-    .projects .projects-content .card {
-        margin-bottom: 1.25rem;
-        width: 100vw;
-    }
+  .projects .projects-content .card {
+    margin-bottom: 1.25rem;
+    width: 100vw;
+  }
 
-    .projects .btn-code,
-    .projects .btn-demo {
-        font-size: 0.875rem;
-        margin: 0.2rem;
-        padding: 0.5rem 0.625rem;
-    }
+  .projects .btn-code,
+  .projects .btn-demo {
+    font-size: 0.875rem;
+    margin: 0.2rem;
+    padding: 0.5rem 0.625rem;
+  }
+
+  .projects .projects-content .card p {
+    line-height: 1.7;
+    margin-top: 0.75rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 @media (max-width: 40.625em) {
-    .projects .projects-content .card {
-        width: 100%;
-    }
-
-    .projects .projects-content .card {
-        padding: 0.5rem 0;
-        width: 100%;
-    }
+  .projects .projects-content .card {
+    padding: 1rem 0.75rem;
+    width: 100%;
+  }
 }
