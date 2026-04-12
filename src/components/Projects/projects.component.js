@@ -1,6 +1,5 @@
 import React from "react";
 import bookingImg from "../../assets/projects/booking-app.png";
-import sunriseImg from "../../assets/projects/sunrise-apparel.png";
 import smartbrainImg from "../../assets/projects/smartbrain.png";
 import perfectmixImg from "../../assets/projects/perfect-mix.png";
 
@@ -47,42 +46,6 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="btn-demo"
                 href="https://mern-booking-app-iaa4.onrender.com/"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="box">
-              <img
-                className="project-img"
-                src={sunriseImg}
-                alt="Sunrise Apparel"
-                title="Sunrise Apparel"
-                loading="lazy"
-              />
-              <h3 className="text">Sunrise Apparel</h3>
-              <p>
-                An innovative e-commerce platform tailored for fashion
-                enthusiasts, meticulously crafted with React, Redux, and
-                TypeScript. Elevating user interface through styled-components
-                CSS, the website seamlessly integrates Firebase and Stripe for
-                secure transactions, ensuring a dynamic and secure shopping
-                experience encompassing both frontend and backend technologies.
-              </p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-code"
-                href="https://github.com/LeslieLopez25/sunglow-apparel"
-              >
-                Source Code
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-demo"
-                href="https://sun-apparel.netlify.app/"
               >
                 Live Demo
               </a>
